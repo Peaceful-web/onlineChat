@@ -86,7 +86,7 @@ const handleLogin = (event) => {
     login.style.display = "none" // vai acessar o css do display adicionar o valor none na propriedade display
     chat.style.display = "flex" // vai acessar o css da section chat e adcionar o valor "flex" à propriedade display
 
-    websocket = new WebSocket("ws://localhost:8080")
+    websocket = new WebSocket("wss://onlinechatfront.onrender.com")
     websocket.onmessage = processMessage
 
 }
